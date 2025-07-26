@@ -1,0 +1,34 @@
+name: Manage Travel Blog Infrastructure
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Init
+        run: echo "Running terraform init (dummy)"
+
+  validate:
+    runs-on: ubuntu-latest
+    needs: init
+    steps:
+      - name: Echo Validate
+        run: echo "Running terraform validate (dummy)"
+
+  plan:
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - name: Echo Plan
+        run: echo "Running terraform plan (dummy)"
+
+  apply:
+    runs-on: ubuntu-latest
+    needs: plan
+    steps:
+      - name: Echo Apply
+        run: echo "Running terraform apply (dummy)"
