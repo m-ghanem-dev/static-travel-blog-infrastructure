@@ -12,6 +12,11 @@ resource "aws_s3_bucket_website_configuration" "website" {
   index_document {
     suffix = "index.html"
   }
+
+  error_document {
+    suffix = "index.html"
+  }
+
 }
 
 resource "aws_s3_bucket_public_access_block" "public_access" {
