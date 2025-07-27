@@ -1,7 +1,7 @@
 resource "aws_cloudfront_distribution" "cdn" {
   origin {
     // Use S3 static website endpoint as origin domain
-    domain_name = "static-travel-blog-bucket-jskldjlq341.s3-website-eu-central-1.amazonaws.com"
+    domain_name = "static-travel-blog-bucket-jskldjlq341.s3-website.eu-central-1.amazonaws.com"
     origin_id   = "S3-static-travel-blog-bucket"
 
     custom_origin_config {
