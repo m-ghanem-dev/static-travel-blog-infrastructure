@@ -10,3 +10,7 @@ Terraform files for infrastructure of static travel blog website with github act
 - S3: http://static-travel-blog-bucket-jskldjlq341.s3-website.eu-central-1.amazonaws.com/
 
 - Cloudfront: https://d1ruiy8h2umqmp.cloudfront.net/
+
+# Website repository
+
+https://github.com/m-ghanem-dev/static-travel-blog
