@@ -1,9 +1,6 @@
 name: Manage Travel Blog Infrastructure
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
